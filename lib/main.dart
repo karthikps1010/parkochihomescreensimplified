@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xFFF5F5F5),
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.green,highlightColor: Colors.white
       ),
       home: const HomeScreen(),
     );
@@ -121,6 +121,7 @@ class ParkingCard extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w600,
+                    fontFamily: 'Montserrat',
                   ),
                 ),
               ),
@@ -151,8 +152,8 @@ class ParkingCard extends StatelessWidget {
               Flexible(
                 child: Text(
                   subtitle,
-                  maxLines: 2,
-                  style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                  maxLines: 3,
+                  style: TextStyle(color: Colors.grey[700], fontSize: 14,fontFamily: 'Segoe_UI',fontWeight: FontWeight.bold),
                 ),
               ),
 
@@ -174,7 +175,7 @@ class ParkingCard extends StatelessWidget {
                 child: Text(
                   "Value Added Services",
                   maxLines: 2,
-                  style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                  style: TextStyle(color: Colors.grey[700], fontSize: 14,fontFamily: 'Segoe_UI'),
                 ),
               ),
               // const SizedBox(height: 12),
@@ -182,7 +183,7 @@ class ParkingCard extends StatelessWidget {
                 child: Text(
                   "Available Parking type",
                   maxLines: 2,
-                  style: TextStyle(color: Colors.grey[700], fontSize: 14),
+                  style: TextStyle(color: Colors.grey[700], fontSize: 14,fontFamily: 'Segoe_UI'),
                 ),
               ),
             ],
